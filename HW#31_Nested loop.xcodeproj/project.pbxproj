@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		D34E53312A6EC7300072E65F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34E53302A6EC7300072E65F /* AppDelegate.swift */; };
 		D34E53332A6EC7300072E65F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34E53322A6EC7300072E65F /* SceneDelegate.swift */; };
-		D34E53352A6EC7300072E65F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34E53342A6EC7300072E65F /* ViewController.swift */; };
 		D34E53382A6EC7300072E65F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34E53362A6EC7300072E65F /* Main.storyboard */; };
 		D34E533A2A6EC7310072E65F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34E53392A6EC7310072E65F /* Assets.xcassets */; };
 		D34E533D2A6EC7310072E65F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34E533B2A6EC7310072E65F /* LaunchScreen.storyboard */; };
+		D3A90DDB2A77E486003B8AA3 /* NestedLoopSquareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A90DDA2A77E486003B8AA3 /* NestedLoopSquareViewController.swift */; };
+		D3D366022A70158800B6DB5D /* NestedLoopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D366012A70158800B6DB5D /* NestedLoopViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D34E532D2A6EC7300072E65F /* HW#31_Nested loop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW#31_Nested loop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34E53302A6EC7300072E65F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D34E53322A6EC7300072E65F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D34E53342A6EC7300072E65F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D34E53372A6EC7300072E65F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D34E53392A6EC7310072E65F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D34E533C2A6EC7310072E65F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D34E533E2A6EC7310072E65F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3A90DDA2A77E486003B8AA3 /* NestedLoopSquareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedLoopSquareViewController.swift; sourceTree = "<group>"; };
+		D3D366012A70158800B6DB5D /* NestedLoopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedLoopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				D34E53302A6EC7300072E65F /* AppDelegate.swift */,
 				D34E53322A6EC7300072E65F /* SceneDelegate.swift */,
-				D34E53342A6EC7300072E65F /* ViewController.swift */,
+				D3D366012A70158800B6DB5D /* NestedLoopViewController.swift */,
+				D3A90DDA2A77E486003B8AA3 /* NestedLoopSquareViewController.swift */,
 				D34E53362A6EC7300072E65F /* Main.storyboard */,
 				D34E53392A6EC7310072E65F /* Assets.xcassets */,
 				D34E533B2A6EC7310072E65F /* LaunchScreen.storyboard */,
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D34E53352A6EC7300072E65F /* ViewController.swift in Sources */,
+				D3A90DDB2A77E486003B8AA3 /* NestedLoopSquareViewController.swift in Sources */,
 				D34E53312A6EC7300072E65F /* AppDelegate.swift in Sources */,
+				D3D366022A70158800B6DB5D /* NestedLoopViewController.swift in Sources */,
 				D34E53332A6EC7300072E65F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

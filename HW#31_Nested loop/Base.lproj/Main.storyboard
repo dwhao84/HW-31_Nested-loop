@@ -1,24 +1,256 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IKM-EA-hUO">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Nested Loop Square View Controller-->
+        <scene sceneID="ENM-lu-rfc">
+            <objects>
+                <viewController id="bex-nT-Lle" customClass="NestedLoopSquareViewController" customModule="HW_31_Nested_loop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mse-rx-UyI">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="middleTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="323" translatesAutoresizingMaskIntoConstraints="NO" id="kZK-sf-ntw">
+                                <rect key="frame" x="35" y="203" width="358" height="358"/>
+                                <color key="backgroundColor" red="0.87262347029999998" green="0.83817744760000001" blue="0.95559697659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kZK-sf-ntw" secondAttribute="height" multiplier="1:1" id="U0v-t4-nHG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="k4W-5Y-qXc">
+                                <rect key="frame" x="35" y="127" width="358" height="32"/>
+                                <color key="backgroundColor" red="0.87262347027972031" green="0.83817744755244761" blue="0.95559697655285891" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="Square"/>
+                                    <segment title="Diagonal"/>
+                                    <segment title="Diagonal 2"/>
+                                    <segment title="Cover"/>
+                                    <segment title="diff."/>
+                                </segments>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="selectedSegmentTintColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="9" translatesAutoresizingMaskIntoConstraints="NO" id="MKP-ie-4Ba">
+                                <rect key="frame" x="33" y="591" width="300.66666666666669" height="31"/>
+                                <color key="tintColor" red="0.68627450980000004" green="0.61289881989999995" blue="0.97286096259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="minimumTrackTintColor" red="0.73772212010000005" green="0.72361940869999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" white="0.90000000000000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="BXD-Ot-X8i"/>
+                                    <action selector="sliderValueChanged:" destination="bex-nT-Lle" eventType="valueChanged" id="s5f-je-PGt"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="60" translatesAutoresizingMaskIntoConstraints="NO" id="OWl-bn-SH9">
+                                <rect key="frame" x="351.66666666666669" y="596" width="41.333333333333314" height="20.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VdI-CZ-8lY"/>
+                        <color key="backgroundColor" name="BackgroundColorSet"/>
+                        <constraints>
+                            <constraint firstItem="VdI-CZ-8lY" firstAttribute="trailing" secondItem="OWl-bn-SH9" secondAttribute="trailing" constant="35" id="2mt-WW-ykP"/>
+                            <constraint firstItem="VdI-CZ-8lY" firstAttribute="trailing" secondItem="kZK-sf-ntw" secondAttribute="trailing" constant="35" id="58D-Qg-9tz"/>
+                            <constraint firstItem="kZK-sf-ntw" firstAttribute="top" secondItem="k4W-5Y-qXc" secondAttribute="bottom" constant="45" id="7nV-WE-oNP"/>
+                            <constraint firstItem="kZK-sf-ntw" firstAttribute="leading" secondItem="VdI-CZ-8lY" secondAttribute="leading" constant="35" id="Drl-DA-5He"/>
+                            <constraint firstItem="k4W-5Y-qXc" firstAttribute="leading" secondItem="VdI-CZ-8lY" secondAttribute="leading" constant="35" id="Toz-Kb-z6F"/>
+                            <constraint firstItem="OWl-bn-SH9" firstAttribute="leading" secondItem="MKP-ie-4Ba" secondAttribute="trailing" constant="20" id="ZH6-wq-N01"/>
+                            <constraint firstItem="MKP-ie-4Ba" firstAttribute="leading" secondItem="VdI-CZ-8lY" secondAttribute="leading" constant="35" id="d0o-yz-zcl"/>
+                            <constraint firstItem="MKP-ie-4Ba" firstAttribute="top" secondItem="kZK-sf-ntw" secondAttribute="bottom" constant="30" id="rS2-Y3-vxR"/>
+                            <constraint firstItem="k4W-5Y-qXc" firstAttribute="top" secondItem="VdI-CZ-8lY" secondAttribute="top" constant="36" id="sPj-MI-ki9"/>
+                            <constraint firstItem="OWl-bn-SH9" firstAttribute="top" secondItem="kZK-sf-ntw" secondAttribute="bottom" constant="35" id="xHb-IX-nBv"/>
+                            <constraint firstItem="VdI-CZ-8lY" firstAttribute="trailing" secondItem="k4W-5Y-qXc" secondAttribute="trailing" constant="35" id="xW8-9z-Nqz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lav-oX-wGL"/>
+                    <connections>
+                        <outlet property="numberLabel" destination="OWl-bn-SH9" id="4Jt-ci-krg"/>
+                        <outlet property="patternLabel" destination="kZK-sf-ntw" id="Ls7-Aw-qS7"/>
+                        <outlet property="patternTypeSegmentControl" destination="k4W-5Y-qXc" id="chl-el-blZ"/>
+                        <outlet property="valueSlider" destination="MKP-ie-4Ba" id="HAV-QA-oax"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4fe-48-vYb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="788" y="145.56650246305421"/>
+        </scene>
+        <!--Nested Loop View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="NestedLoopViewController" customModule="HW_31_Nested_loop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="middleTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="323" translatesAutoresizingMaskIntoConstraints="NO" id="To3-LA-ztJ">
+                                <rect key="frame" x="35" y="203" width="358" height="358"/>
+                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="To3-LA-ztJ" secondAttribute="height" multiplier="1:1" id="aV9-4Q-NbQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="1" maxValue="9" translatesAutoresizingMaskIntoConstraints="NO" id="LwD-uz-6jr">
+                                <rect key="frame" x="33" y="591" width="300.66666666666669" height="31"/>
+                                <color key="tintColor" red="0.92542898650000005" green="0.9207108021" blue="0.20091912149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="minimumTrackTintColor" red="0.89964384191176472" green="0.8993278952205882" blue="0.63640178997352947" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" white="0.90000000000000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Yx9-Fc-lQl"/>
+                                </connections>
+                            </slider>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="yOU-YV-amF">
+                                <rect key="frame" x="35" y="127" width="358" height="32"/>
+                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="Square"/>
+                                    <segment title="Triangle"/>
+                                    <segment title="Pyramid" width="80"/>
+                                    <segment title="Diamond"/>
+                                </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="selectedSegmentTintColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.73563777346470571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="60" translatesAutoresizingMaskIntoConstraints="NO" id="VWG-DV-t2V">
+                                <rect key="frame" x="351.66666666666669" y="596" width="41.333333333333314" height="20.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="BackgroundColorSet"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yOU-YV-amF" secondAttribute="trailing" constant="35" id="6Ao-Vb-bsX"/>
+                            <constraint firstItem="yOU-YV-amF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="6s9-gx-50d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="To3-LA-ztJ" secondAttribute="trailing" constant="35" id="7Tm-e8-9Av"/>
+                            <constraint firstItem="To3-LA-ztJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="9Sc-E2-cbx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VWG-DV-t2V" secondAttribute="trailing" constant="35" id="BdV-qx-3c2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VWG-DV-t2V" secondAttribute="trailing" constant="35" id="Pqe-tc-DT4"/>
+                            <constraint firstItem="LwD-uz-6jr" firstAttribute="top" secondItem="To3-LA-ztJ" secondAttribute="bottom" constant="30" id="UHD-Oc-JGb"/>
+                            <constraint firstItem="LwD-uz-6jr" firstAttribute="top" secondItem="To3-LA-ztJ" secondAttribute="bottom" constant="30" id="XuW-9c-8lw"/>
+                            <constraint firstItem="VWG-DV-t2V" firstAttribute="top" secondItem="To3-LA-ztJ" secondAttribute="bottom" constant="35" id="mXk-KE-vlp"/>
+                            <constraint firstItem="yOU-YV-amF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="mfD-Jx-Syo"/>
+                            <constraint firstItem="To3-LA-ztJ" firstAttribute="top" secondItem="yOU-YV-amF" secondAttribute="bottom" constant="45" id="myr-qg-28M"/>
+                            <constraint firstItem="LwD-uz-6jr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="nWr-L6-jXt"/>
+                            <constraint firstItem="VWG-DV-t2V" firstAttribute="leading" secondItem="LwD-uz-6jr" secondAttribute="trailing" constant="20" id="q7h-ZA-ppU"/>
+                            <constraint firstItem="To3-LA-ztJ" firstAttribute="top" secondItem="yOU-YV-amF" secondAttribute="bottom" constant="45" id="y2i-UC-G5g"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Rm9-hD-h6t"/>
+                    <connections>
+                        <outlet property="numberLabel" destination="VWG-DV-t2V" id="dPE-oa-H8u"/>
+                        <outlet property="numberSlider" destination="LwD-uz-6jr" id="KRH-Zy-gur"/>
+                        <outlet property="patternLabel" destination="To3-LA-ztJ" id="Khx-mv-vFi"/>
+                        <outlet property="patternTypeSegmentedControl" destination="yOU-YV-amF" id="Xzq-e7-moe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1723" y="145"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lkQ-eq-gL6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IIG-Yh-Ghi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="xin-rS-KNy">
+                        <imageReference key="image" image="square" catalog="system" symbolScale="default" renderingMode="hierarchical-single">
+                            <hierarchicalColors>
+                                <color white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color systemColor="secondaryLabelColor"/>
+                                <color systemColor="tertiaryLabelColor"/>
+                            </hierarchicalColors>
+                        </imageReference>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T2R-Rg-aOD">
+                        <rect key="frame" x="0.0" y="47" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="C5J-Oe-B1b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bgg-eE-fEB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1724" y="-616"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Olm-yL-Ojy">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="IKM-EA-hUO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="TF0-sV-fTa"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="fill" id="dts-dq-XvV">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4va-ob-Q8e" kind="relationship" relationship="viewControllers" id="9GA-on-4lG"/>
+                        <segue destination="IIG-Yh-Ghi" kind="relationship" relationship="viewControllers" id="iB8-fp-6tw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mbb-F9-NJ6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1194.6564885496182" y="-1382.3943661971832"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cdO-v8-Bjf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4va-ob-Q8e" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="2Hu-Oy-Tvd">
+                        <imageReference key="image" image="pencil.and.outline" catalog="system" renderingMode="hierarchical-single">
+                            <hierarchicalColors>
+                                <color white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color systemColor="secondaryLabelColor"/>
+                                <color systemColor="tertiaryLabelColor"/>
+                            </hierarchicalColors>
+                        </imageReference>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mxm-KX-mvw">
+                        <rect key="frame" x="0.0" y="47" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bex-nT-Lle" kind="relationship" relationship="rootViewController" id="6jA-su-9Pd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OW7-bP-aqj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789" y="-616"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="pencil.and.outline" catalog="system" width="128" height="128"/>
+        <image name="square" catalog="system" width="128" height="114"/>
+        <namedColor name="BackgroundColorSet">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
